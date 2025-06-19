@@ -3,12 +3,11 @@
 // $dbname = 'gudang_db';
 // $username = 'root';
 // $password = '';
-
-$host = 'mysql.railway.internal';
+$host = 'nozomi.proxy.rlwy.net';
 $dbname = 'railway';
 $username = 'root';
 $password = 'YqgbKBTiDvxzMYjzAFxOnZFvNJoYQVet';
-$port = 3306;
+$port = 32871;
 
 try {
     $db = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
