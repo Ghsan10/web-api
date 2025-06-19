@@ -1,6 +1,8 @@
 <?php
 require '../config/database.php';
-header("Content-Type: application/json");
+include '../config/cors.php';
+setCorsHeaders();
+header('Content-Type: application/json');
 
 $data = json_decode(file_get_contents("php://input"));
 

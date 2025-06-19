@@ -1,6 +1,8 @@
 <?php
-header('Content-Type: application/json');
 include '../config/database.php';
+include '../config/cors.php';
+setCorsHeaders();
+header('Content-Type: application/json');
 
 if (!isset($_POST['api_key'])) {
     http_response_code(400);

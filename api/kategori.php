@@ -1,4 +1,6 @@
 <?php
+include '../config/cors.php';
+setCorsHeaders();
 header('Content-Type: application/json');
 
 // Include koneksi database dari folder config

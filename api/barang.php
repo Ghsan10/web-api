@@ -1,6 +1,8 @@
 <?php
-header("Content-Type: application/json");
 include '../config/database.php';
+include '../config/cors.php';
+setCorsHeaders();
+header('Content-Type: application/json');
 
 if (!isset($_GET['api_key'])) {
     echo json_encode(['message' => 'API Key diperlukan']);
